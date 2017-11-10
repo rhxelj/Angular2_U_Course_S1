@@ -1,0 +1,14 @@
+Error
+>npm start
+
+> a2website@1.0.0 start C:\Users\Rogelio\OneDrive - SM\SandBox\Udemy\A2\a2website
+> tsc && concurrently "npm run tsc:w" "npm run lite"
+
+node_modules/rxjs/Subject.d.ts(16,22): error TS2415: Class 'Subject<T>' incorrectly extends base class 'Observable<T>'.
+  Types of property 'lift' are incompatible.
+    Type '<T, R>(operator: Operator<T, R>) => Observable<T>' is not assignable to type '<R>(operator: Operator<T, R>) => Observable<R>'.
+      Type 'Observable<T>' is not assignable to type 'Observable<R>'.
+        Type 'T' is not assignable to type 'R'.
+
+Solution:
+https://stackoverflow.com/questions/44793859/rxjs-subject-d-ts-error-class-subjectt-incorrectly-extends-base-class-obs
